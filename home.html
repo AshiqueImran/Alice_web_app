@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alice Ding - Portfolio</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+          --primary-color: #FF527A;
+          --profile-border : rgba(255, 220, 228, 1);
+          --text-color: black; #6c757d
+        }
+        .text-sm {
+          font-size: 0.875rem;
+          line-height: 1.25rem;
+        }
+        .hero-section {
+/*            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);*/
+            min-height: 100vh;
+            padding: 60px 0;
+        }
+        
+        .profile-image {
+            width: 280px;
+            height: 280px;
+            border-radius: 50%;
+            border: 4px solid var(--profile-border);
+            object-fit: cover;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .name-highlight {
+            color: var(--primary-color);
+            font-weight: 700;
+        }
+        
+        .badge-custom {
+            background-color: var(--profile-border) ;
+            color: var(--primary-color);
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-weight: 500;
+            margin: 4px;
+            border: none;
+        }
+        
+        .btn-primary-custom {
+            background-color: var(--primary-color);
+            border: none;
+            padding: 12px 30px;
+            color: white;
+/*            border-radius: 25px;*/
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary-custom:hover {
+            transform: translateY(-4px);
+            background-color: var(--primary-color) !important;
+            color: white;
+            box-shadow: 0 5px 15px rgba(255, 105, 180, 0.4);
+        }
+        
+        .btn-outline-custom {
+            border: 2px solid black;
+            color: balck;
+            padding: 12px 30px;
+/*            border-radius: 25px;*/
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-outline-custom:hover {
+/*            background-color: #6c757d;*/
+            border: 2px solid black;
+            color: balck;
+            transform: translateY(-4px);
+        }
+        
+        .navbar-custom {
+            background-color: white;
+            box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+        }
+        
+        .navbar-nav .nav-link {
+            color: var(--text-color)!important;
+            font-weight: 501;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+        
+        .navbar-nav .nav-link:hover,
+        .navbar-nav .nav-link.active {
+            color: var(--primary-color) !important;
+        }
+        
+        .navbar-brand {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: Black !important;
+        }
+        
+        .icon-btn {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: 1px solid #dee2e6;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-color);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            margin: 0 5px;
+        }
+        
+        .icon-btn:hover {
+            background-color: var(--primary-color);
+            color: white;
+            border-color: var(--primary-color);
+        }
+        
+        .main-title {
+            font-size: 3.5rem;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 2rem;
+        }
+        
+        .description {
+            font-size: 1.1rem;
+            color: var(--text-color);
+            line-height: 1.6;
+            margin-bottom: 2rem;
+            max-width: 36rem;
+        }
+        
+        @media (max-width: 768px) {
+            .main-title {
+                font-size: 2.5rem;
+            }
+            
+            .profile-image {
+                width: 200px;
+                height: 200px;
+            }
+        }
+
+
+        /* Additional styles for the Articles & Research section */
+
+
+        .fas.fa-thin{
+           color: transparent;
+           -webkit-text-stroke-width: 1px;
+           -webkit-text-stroke-color: var(--primary-color);
+         }
+
+        .card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 2px solid #E4E4E7;
+            border-radius: 10px;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15) !important;
+        }
+
+        .btn-link:hover {
+            color: #ff69b4 !important;
+        }
+
+        .btn-link:hover i {
+            transform: translateX(5px);
+            transition: transform 0.3s ease;
+        }
+
+        .card-title {
+            color: #333;
+            font-size: 1.4rem;
+        }
+
+        .card-text {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: var(--text-color);
+        }
+
+
+        /* Technical Expertise Section Styles */
+        .icon-color{
+            color: var(--primary-color);
+        }
+.expertise-card {
+/*    background: #fff;*/
+    border: 1px solid #E4E4E7;
+    border-radius: 12px;
+    padding: 2rem;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.expertise-card:hover {
+    border-color: var(--primary-color);
+    box-shadow: 0 5px 20px var(--profile-border);
+    transform: translateY(-2px);
+}
+
+.expertise-title {
+    color: black;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1.25rem;
+    line-height: 1.3;
+}
+
+.expertise-content {
+    color: var(--text-color);
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 0;
+    flex-grow: 1;
+}
+
+/* Footer Styles */
+footer {
+    margin-top: auto;
+}
+
+.social-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #f8f9fa;
+    color: var(--text-color);
+    border-radius: 50%;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 1.1rem;
+}
+
+.social-link:hover {
+    background-color: var(--primary-color);
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .expertise-card {
+        padding: 1.5rem;
+    }
+    
+    .expertise-title {
+        font-size: 1.1rem;
+    }
+    
+    .expertise-content {
+        font-size: 0.95rem;
+    }
+}
+
+/* Ensure equal height cards */
+.row.g-4 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row.g-4 > [class*="col-"] {
+    display: flex;
+}
+
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Alice Ding</a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-sm active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-sm" href="#articles">Articles</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-sm" href="#videos">Videos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-sm" href="#about">About</a>
+                    </li>
+                </ul>
+                
+                <div class="d-flex ms-3">
+                    <a href="#" class="icon-btn">
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                    <a href="#" class="icon-btn">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" class="icon-btn">
+                        <i class="fas fa-palette"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section Intro-->
+    <section class="hero-section" id="home">
+        <div class="container">
+            <div class="row align-items-center pt-5">
+                <div class="col-lg-4 order-lg-1 text-center mb-5 mb-lg-0">
+                    <img src="img/photo.jpeg" 
+                         alt="Alice Ding" 
+                         class="profile-image">
+                </div>
+                
+                <div class="col-lg-8 order-lg-2 text-lg-start text-sm-center">
+                    <h1 class="main-title">
+                        Hello, I'm <span class="name-highlight">Alice Ding</span>
+                    </h1>
+                    
+                    <div class="mb-4">
+                        <span class="badge badge-custom text-sm ">AI Product Manager</span>
+                        <span class="badge badge-custom text-sm ">PMI-ACP</span>
+                        <span class="badge badge-custom text-sm ">Multi-modal AI</span>
+                        <span class="badge badge-custom text-sm ">LLM Integration</span>
+                    </div>
+                    
+                    <p class="description">
+                        AI-focused product manager with 8 years of cross-functional leadership 
+                        and a platform-oriented mindset. Currently conducting advanced research 
+                        in multi-modal learning and LLM-based systems with applications in 
+                        context-aware video understanding.
+                    </p>
+                    
+                    <div class="d-flex flex-wrap justify-content-lg-start justify-content-sm-center gap-2 ">
+                        <button class="btn btn-primary-custom btn-sm">
+                            More About Me
+                        </button>
+                        <button class="btn btn-outline-custom btn-sm">
+                            Read My Articles
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Articles & Research Section -->
+<section class="py-0 ">
+    <div class="container">
+        <div class="row g-4">
+            <!-- Latest Articles Card -->
+            <div class="col-lg-6">
+                <div class="card h-100 border-1 shadow-sm">
+                    <div class="card-body p-4">
+                        <div class="d-flex align-items-center mb-3">
+                                <i class="me-3 fas fa-thin fa-file-text fs-4"></i>
+
+                            <h3 class="card-title fw-bold">Latest Articles</h3>
+                        </div>
+                        
+                        <p class="card-text  mb-4">
+                            Insights on AI product management, multi-modal learning, and LLM integration from Superlinear Academy.
+                        </p>
+                        
+                        <a href="#" class="btn btn-link p-0 text-dark fw-semibold text-decoration-none d-flex align-items-center">
+                            Browse Articles 
+                            <i class="fas fa-arrow-right ms-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- AI Research Card -->
+            <div class="col-lg-6">
+                <div class="card h-100 border-1 shadow-sm">
+                    <div class="card-body p-4">
+                        <div class="d-flex align-items-center mb-3">
+                                <i class="me-3 fas fa-thin fa-brain  fs-4"></i>
+                            <h3 class="card-title fw-bold">AI Research</h3>
+                        </div>
+                        
+                        <p class="card-text  mb-4">
+                            Current research in transformer-based architectures for multi-modal video captioning and narrative understanding.
+                        </p>
+                        
+                        <a href="#" class="btn btn-link p-0 text-dark fw-semibold text-decoration-none d-flex align-items-center">
+                            View Research 
+                            <i class="fas fa-arrow-right ms-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Featured Projects Section -->
+<section class="py-5 bg-white">
+    <div class="container">
+        <!-- Section Header -->
+        <div class="row mb-5">
+            <div class="col-12">
+                <div class="d-flex align-items-center mb-4">
+                        <i class=" me-3 fas fa-palette fa-thin icon-color fs-3"></i>
+                    <h2 class="fw-bold mb-0">Featured Projects</h2>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Expertise Cards -->
+        <div class="row g-4">
+            <!-- AI/ML Technologies -->
+            <div class="col-lg-4 col-md-6">
+                <div class="expertise-card h-100">
+                    <h4 class="expertise-title">AI/ML Technologies</h4>
+                    <p class="expertise-content">
+                        Multi-modal Learning, LLM Integration, Video Understanding, Transformer Architectures, Emotion Recognition
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Development & Tools -->
+            <div class="col-lg-4 col-md-6">
+                <div class="expertise-card h-100">
+                    <h4 class="expertise-title">Development & Tools</h4>
+                    <p class="expertise-content">
+                        Python, SQL, Java, Cursor, Zoho Projects, Notion, NotebookLM, Custom CRM Development
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Product Strategy -->
+            <div class="col-lg-4 col-md-6">
+                <div class="expertise-card h-100">
+                    <h4 class="expertise-title">Product Strategy</h4>
+                    <p class="expertise-content">
+                        Agile Methodologies (PMI-ACP), Product Lifecycle Management, Platform Thinking, Stakeholder Collaboration
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Technical Expertise Section -->
+<section class="py-5 bg-white">
+    <div class="container">
+        <!-- Section Header -->
+        <div class="row mb-5">
+            <div class="col-12">
+                <div class="d-flex align-items-center mb-4">
+                        <i class=" me-3 fas fa-code icon-color fa-thin fs-3"></i>
+                    <h2 class="fw-bold mb-0">Technical Expertise</h2>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Expertise Cards -->
+        <div class="row g-4">
+            <!-- AI/ML Technologies -->
+            <div class="col-lg-4 col-md-6">
+                <div class="expertise-card h-100">
+                    <h4 class="expertise-title">AI/ML Technologies</h4>
+                    <p class="expertise-content">
+                        Multi-modal Learning, LLM Integration, Video Understanding, Transformer Architectures, Emotion Recognition
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Development & Tools -->
+            <div class="col-lg-4 col-md-6">
+                <div class="expertise-card h-100">
+                    <h4 class="expertise-title">Development & Tools</h4>
+                    <p class="expertise-content">
+                        Python, SQL, Java, Cursor, Zoho Projects, Notion, NotebookLM, Custom CRM Development
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Product Strategy -->
+            <div class="col-lg-4 col-md-6">
+                <div class="expertise-card h-100">
+                    <h4 class="expertise-title">Product Strategy</h4>
+                    <p class="expertise-content">
+                        Agile Methodologies (PMI-ACP), Product Lifecycle Management, Platform Thinking, Stakeholder Collaboration
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-light py-4 border-top">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <p class="mb-0 text-muted">
+                    © 2025 Alice Ding. All rights reserved.
+                </p>
+            </div>
+            <div class="col-md-6">
+                <div class="d-flex justify-content-md-end justify-content-start mt-3 mt-md-0">
+                    <a href="#" class="social-link me-3" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="social-link me-3" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-link me-3" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" class="social-link" aria-label="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
