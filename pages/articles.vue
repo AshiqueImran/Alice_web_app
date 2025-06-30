@@ -1,59 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alice Ding - Portfolio</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-
-    <link href="style.css" rel="stylesheet">
-
-
-</head>
-<body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">Alice Ding</a>
-            
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link text-sm " href="home.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-sm active" href="articles.html">Articles</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-sm" href="videos.html">Videos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-sm" href="#about">About</a>
-                    </li>
-                </ul>
-                
-                <div class="d-flex ms-3">
-                    <a href="#" class="icon-btn">
-                        <i class="fas fa-external-link-alt"></i>
-                    </a>
-                    <a href="#" class="icon-btn">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="#" class="icon-btn">
-                        <i class="fas fa-palette"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </nav>
-
- 
-    <!-- Articles Section -->
+<template>
+    <div>
+         <!-- Articles Section -->
     <section class="my-5  py-5">
         <div class="container">
             <!-- Section Header -->
@@ -188,39 +135,13 @@
             </div>
         </div>
     </section>
-
-<!-- Footer -->
-<footer class="bg-light py-4 border-top">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-md-6">
-                <p class="mb-0 text-muted">
-                    © 2025 Alice Ding. All rights reserved.
-                </p>
-            </div>
-            <div class="col-md-6">
-                <div class="d-flex justify-content-md-end justify-content-start mt-3 mt-md-0">
-                    <a href="#" class="social-link me-3" aria-label="LinkedIn">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <a href="#" class="social-link me-3" aria-label="Twitter">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a href="#" class="social-link me-3" aria-label="GitHub">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="#" class="social-link" aria-label="YouTube">
-                        <i class="fab fa-youtube"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
     </div>
-</footer>
+</template>
 
+<script setup>
 
+</script>
 
+<style  scoped>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+</style>

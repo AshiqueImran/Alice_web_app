@@ -1,98 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alice Ding - Portfolio</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+<template>
+    <div>
 
-    <link href="style.css" rel="stylesheet">
+    <!-- Hero Section -->
 
-
-</head>
-<body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">Alice Ding</a>
-            
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link text-sm active" href="home.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-sm" href="articles.html">Articles</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-sm" href="videos.html">Videos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-sm" href="#about">About</a>
-                    </li>
-                </ul>
-                
-                <div class="d-flex ms-3">
-                    <a href="#" class="icon-btn">
-                        <i class="fas fa-external-link-alt"></i>
-                    </a>
-                    <a href="#" class="icon-btn">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="#" class="icon-btn">
-                        <i class="fas fa-palette"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Hero Section Intro-->
-    <section class="hero-section" id="home">
-        <div class="container">
-            <div class="row align-items-center pt-5">
-                <div class="col-lg-4 order-lg-1 text-center mb-5 mb-lg-0">
-                    <img src="img/photo.jpeg" 
-                         alt="Alice Ding" 
-                         class="profile-image">
-                </div>
-                
-                <div class="col-lg-8 order-lg-2 text-lg-start text-sm-center">
-                    <h1 class="main-title">
-                        Hello, I'm <span class="name-highlight">Alice Ding</span>
-                    </h1>
-                    
-                    <div class="mb-4">
-                        <span class="badge badge-custom text-sm ">AI Product Manager</span>
-                        <span class="badge badge-custom text-sm ">PMI-ACP</span>
-                        <span class="badge badge-custom text-sm ">Multi-modal AI</span>
-                        <span class="badge badge-custom text-sm ">LLM Integration</span>
-                    </div>
-                    
-                    <p class="description">
-                        AI-focused product manager with 8 years of cross-functional leadership 
-                        and a platform-oriented mindset. Currently conducting advanced research 
-                        in multi-modal learning and LLM-based systems with applications in 
-                        context-aware video understanding.
-                    </p>
-                    
-                    <div class="d-flex flex-wrap justify-content-lg-start justify-content-sm-center gap-2 ">
-                        <button class="btn btn-primary-custom btn-sm">
-                            More About Me
-                        </button>
-                        <button class="btn btn-outline-custom btn-sm">
-                            Read My Articles
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <HomeHero imageSrc="/img/photo.jpeg" />
 
 
 
@@ -245,38 +156,23 @@
     </div>
 </section>
 
-<!-- Footer -->
-<footer class="bg-light py-4 border-top">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-md-6">
-                <p class="mb-0 text-muted">
-                    © 2025 Alice Ding. All rights reserved.
-                </p>
-            </div>
-            <div class="col-md-6">
-                <div class="d-flex justify-content-md-end justify-content-start mt-3 mt-md-0">
-                    <a href="#" class="social-link me-3" aria-label="LinkedIn">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <a href="#" class="social-link me-3" aria-label="Twitter">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a href="#" class="social-link me-3" aria-label="GitHub">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="#" class="social-link" aria-label="YouTube">
-                        <i class="fab fa-youtube"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
+
     </div>
-</footer>
+</template>
 
+<script setup>
 
+</script>
 
+<style >
 
+</style>
+<!-- <head>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+    <link href="style.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+
+
+</head> -->
