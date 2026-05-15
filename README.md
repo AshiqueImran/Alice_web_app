@@ -1,6 +1,8 @@
 # Nuxt Minimal Starter
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+This is the NUXT version of the portfolio.
+
+**Live Demo:** https://alice-static.netlify.app
 
 ## Setup
 
