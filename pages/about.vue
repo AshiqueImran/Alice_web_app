@@ -226,14 +226,14 @@
                                             <i class=" me-3 fas fa-brain fa-thin icon-color fs-5"></i>
                                             <h5 class="expertise-title">Video Understanding & Captioning</h5>
                                         </div>
-                                        <p class="expertise-content">
+                                        <div class="expertise-content">
                                             <ul>
                                                 <li>Researching transformer-based architectures for multi-modal video captioning</li>
                                                 <li> Developing intent-aware captioning models using visual, audio, and subtitle fusion</li>
                                                 <li>Implementing shot boundary detection (SBD) to enhance narrative understanding</li>
                                             </ul>
 
-                                        </p>
+                                        </div>
                                     </div>
                                 </div>
 
@@ -244,13 +244,13 @@
                                             <i class=" me-3 fas fa-heart fa-thin icon-color fs-5"></i>
                                             <h5 class="expertise-title">Emotion Recognition & Narrative Analysis</h5>
                                         </div>
-                                        <p class="expertise-content">
+                                        <div class="expertise-content">
                                             <ul>
                                                 <li>Exploring emotion recognition for richer content modeling</li>
                                                 <li> Developing narrative progression analysis for enhanced storytelling</li>
                                                 <li>Integrating contextual understanding for improved AI-human interaction</li>
                                             </ul>
-                                        </p>
+                                        </div>
                                     </div>
                                 </div>
 
