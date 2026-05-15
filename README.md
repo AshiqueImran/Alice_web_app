@@ -31,7 +31,7 @@ After completing the static version, the project was rebuilt in Nuxt.js and Vue.
 | Layer | Technology |
 |---|---|
 | Markup | HTML5 |
-| Styling | CSS3 |
+| Styling | CSS3 & Bootstrap v5.3.0|
 | Hosting | Netlify |
 | Source | PSD design file (original) |
 
