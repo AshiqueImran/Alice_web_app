@@ -2,7 +2,7 @@
 
 This is the NUXT version of the portfolio.
 
-**Live Demo:** https://alice-static.netlify.app
+**Live Demo:** https://alice-nuxt--alice-static.netlify.app/
 
 ## Setup
 
