@@ -1,6 +1,6 @@
 # Personal Portfolio Website — Static Version
 
-A personal portfolio website built from scratch using HTML5 and CSS3, converted from a PSD design file. This is the **static branch** of the project. A more advanced version built with Nuxt.js and Vue.js is available in the [`nuxt` branch](../../tree/nuxt).
+A personal portfolio website built from scratch using HTML5 and CSS3, converted from a PSD design file. This is the **static branch** of the project. A more advanced version built with Nuxt.js and Vue.js is available in the [`nuxt` branch](../../tree/Alice_Nuxt).
 
 **Live Demo:** https://alice-static.netlify.app
 
@@ -59,9 +59,9 @@ No build tools or dependencies required.
 Clone the repo and open `index.html` in any browser.
 
 ```bash
-git clone https://github.com/AshiqueImran/<repo-name>.git
-cd <repo-name>
-open index.html
+git clone https://github.com/AshiqueImran/Alice_web_app.git
+cd Alice_web_app
+open home.html
 ```
 
 
